@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Your Name | Code 2 Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <div class="nav">
+      <h1>Brandon Iles</h1>
+      <ul>
+        <li>Project <a href="p1.html">#1</a></li>
+        <li>Project <a href="p2.html">#2</a></li>
+        <li>Project <a href="p3.html">#3</a></li>
+        <li>Project <a href="p4.html">#4</a></li>
+        <li>Project <a href="p5.html">#5</a></li>
+        <li>Project <a href="p6.html">#6</a></li>
+        <li>Project <a href="p7.html">#7</a></li>
+        <li>Project <a href="p8.html">#8</a></li>
+        <li>Project <a href="p9.html">#9</a></li>
+        <li>Project <a href="p10.html">#10</a></li>
+        <li> <a href="index.html">Home</a></li>
+      </ul>
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+      <h1>
+        Project #8: Experimental Camera
+      </h1>
+      
+      <iframe 
+              allow = "camera"
+              width = "800 px"
+              height = "800 px"
+              src="https://editor.p5js.org/ilesb520/full/UBae2GKVc"></iframe>
+      
+      
+      <h1>
+        Description
+      </h1>
+      
+      <p>
+        Creating an experimental camera that utilizes facial recognition and AR projections on the face, I had the idea to ellaborate upon one of our earlier
+        coding projects: Random Face Generator. From the resources provided, I was also inspired by the Pixelator filter that Xin had shared with the class. The purpose of this 
+        experimental camera is to give the user the ability to interact with face filters without giving away their identity. Since this filter is offset from the video capture canvas, 
+        the user has the ability to screenshot and share the different combinations that the filter displays without having to post their face or surroundings. Relating to our class discussion 
+        and the dichotomy of hyper-visibility and invisibility, the dots that are dispalyed when the users face is detected will render the shape of a face without 
+        displaying the user's actual face or environment. While there is still a video capture canvas wihin the frame, I hope to erradicate this panel as I refine this project, making the user's face
+        completely obsolete from the screen. Obviously, the webcam will still need to be activated and record the user's face for the filter to work, but it will not 
+        be shown on screen. 
+      </p>
+      
+      <h1>
+        Design Process 
+      </h1>
+      
+      <p>
+        To create this project, I first imported the clmtracker.js library into the p5.js editor to allow for facial recognition. Utilizing the facial points from the template, 
+        I gave each point on the face it's own ellipse and animated their movements collectively. When the circles have enlarged such that the form of the ellipses forms a blob, two eyes and pupils, a nose, 
+        and a mouth are displayed with randomized size proportions. When the loop restarts each time, the proportions of the face change as well as the color of the ellipses and 
+        the background. I then complicated the sketch by mapping the position of mouseX to the alpha value of the fill of the ellipses. When the mouse is at the left side of the canvas, the alpha value is at 255; and when the mouse is at 
+        the right side of the canvas, the aplpha value is at 0. Moving the mouse from left to right as the ellipses animate creates an interesting, kaleidoscope effect that 
+        is mesmerizing to watch. To increase the ease of use, I implemented an "Alpha Display" bar with text so that the user can see the amount of alpha they are adding or subtracting from the frame. 
+
+      </p>
+      
+      <h1>
+        Reflection
+      </h1>
+
+
+      <p>
+        Overall, I beleive that this project is a fun and interactive way to experiment with face filters and facial recognition without the anxieities of displaying one's 
+        true identity, as we have discussed in our course. Continuing with this assignment, I would like to create a canvas that does not display the video of the user, only the mapping of their face on the screen, which will 
+        only be recognizable when the ellipses are small. For assignment 9, I plan to translate the slider from mouseX interaction to DOM interaction to create a real slider 
+        at the bottom of the screen that will similarily manipulate the alpha value of the ellipses. Since I now have experience with switch statements after creating my autobiographical game, 
+        I plan to create several scenes to make this interface more user friendly, displaying a layout that allows the user to understand that they will 
+        need to use their webcam. The second scene will have an instruction guide on how to use the filter before being able to interact with the filter. 
+      </p
+    </div>
+  </body>
+</html>

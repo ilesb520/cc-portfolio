@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Your Name | Code 2 Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <div class="nav">
+      <h1>Brandon Iles</h1>
+      <ul>
+        <li>Project <a href="p1.html">#1</a></li>
+        <li>Project <a href="p2.html">#2</a></li>
+        <li>Project <a href="p3.html">#3</a></li>
+        <li>Project <a href="p4.html">#4</a></li>
+        <li>Project <a href="p5.html">#5</a></li>
+        <li>Project <a href="p6.html">#6</a></li>
+        <li>Project <a href="p7.html">#7</a></li>
+        <li>Project <a href="p8.html">#8</a></li>
+        <li>Project <a href="p9.html">#9</a></li>
+        <li>Project <a href="p10.html">#10</a></li>
+        <li> <a href="index.html">Home</a></li>
+      </ul>
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+      <h1>
+        Project #6: Data Portrait
+      </h1>
+      
+       <iframe
+              height = "600px"
+              width = "600 px"
+              src="https://preview.p5js.org/ilesb520/embed/xzzVZmfWo"></iframe>
+      
+      <p>
+        Code link: https://editor.p5js.org/ilesb520/sketches/xzzVZmfWo
+      </p>
+      
+       <h1>
+        Description 
+      </h1>
+      <p>
+        For our sixth assignment, I created a data portrait that embodies one of my worst habits: nail biting.
+        While this has been a bad habit for as long as I can remember, I wanted to use this assignment to analyze 
+        if I could accurately track how many times I catch myself biting my nails. Data was recorded on Wednesday through 
+        Sunday, and the data represented wihtin the sketch is how many times throughout each day I caught myself 
+        biting my nails. Only four days out of this period are recorded within the sketch, since there were some days with very 
+        little or identical data values. 
+  
+      </p>
+      
+       <h1>
+        Design Process 
+      </h1>
+      
+      <p>
+        Following the curriculum, both arrays and for loops were implemented within this sketch, as well as 2D primitves and calling 
+        personal functions. For each day of data that was translated onto the sketch, I created an array for the 
+        rotational value of each "set". I then mapped the x-values of each function onto the x-values of the canvas' width, which would then 
+        be used for the variable mouseX. This allows each day's shapes to independently rotate in its own, original way 
+        as the mouse moves from left to right on the x-axis. I enjoyed working with each set of rotational rectangles, as I tried 
+        to make them behave as organic forms, which took lots of refining and experimentation. Lastly, the choice to use beveled rectangles 
+        stemmed from the motif of fingers and fingernails.
+      </p>
+      
+       <h1>
+        Reflection 
+      </h1>
+
+      <p>
+        Unlike many of my other projects, I let the data guide the aesthetics for this project. Determining how many data points 
+        I had each day really determined how each form would behave independently and as a whole. I enjoy the composition that I 
+        have created, and I think the finger placed in the middle ties the piece together with a comical touch. 
+      </p>
+      
+      <p>
+        The only problem I have still yet to resolve is the mouseX's constraint on the canvas. When the mouse continues moving right 
+        after reaching the end of the canvas, the shapes will continue to rotate. I am not sure why this is, because my map argument is written as so: 
+      </p>
+      
+      <p>
+        let m = map(mouseX, 0, width, -220, 220); //-220 to 220 is numerical value for x on rectangles, which allows the entire function to rotate 
+      </p>
+      
+    </div>
+  </body>
+</html>
